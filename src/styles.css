@@ -9,6 +9,16 @@ body {
   margin: 0 auto;
 }
 
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
 header {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)),
@@ -111,6 +121,158 @@ header a:active {
   transform: translateY(0);
 }
 
+footer {
+  color: white;
+  background-image:
+    linear-gradient(rgba(8, 43, 40, 0.82), rgba(8, 43, 40, 0.95)),
+    url("../images/alicantefooter.png");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  padding: 80px 40px 24px;
+}
+
+/* Three balanced columns */
+footer .grid {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+  gap: 56px;
+}
+
+.footer-column {
+  min-width: 0;
+}
+
+/* Column headings */
+footer h3 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0 0 24px;
+}
+
+/* Short decorative line below each heading */
+footer h3::after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 2px;
+  background-color: #d9a76c;
+  margin-top: 12px;
+}
+
+/* Paragraphs */
+footer p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.9;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0 0 20px;
+}
+
+/* Introductory paragraph */
+footer .footer-intro {
+  margin-bottom: 20px;
+}
+
+/* Resource list */
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+footer li:first-child {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+footer li a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+
+  padding: 13px 0;
+
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  line-height: 1.7;
+  text-decoration: none;
+
+  transition: color 0.25s ease;
+}
+
+footer li a span {
+  color: #d9a76c;
+  transition: transform 0.25s ease;
+}
+
+footer li a:hover,
+footer .footer-credit a:hover,
+footer .footer-bottom a:hover {
+  color: #d9a76c;
+}
+
+footer li a:hover span {
+  transform: translate(3px, -3px);
+}
+
+/* Project credit */
+footer .footer-credit {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  padding-top: 18px;
+  margin-top: 24px;
+  font-size: 12px;
+}
+
+footer .footer-credit a {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  transition: color 0.25s ease;
+}
+
+/* Bottom footer strip */
+.footer-bottom {
+  max-width: 1200px;
+  margin: 56px auto 0;
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+footer .footer-bottom p,
+footer .footer-bottom a {
+  font-size: 12px;
+  margin: 0;
+}
+
+footer .footer-bottom a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+/* Keyboard accessibility */
+footer a:focus-visible {
+  outline: 2px solid #d9a76c;
+  outline-offset: 4px;
+}
+
 @media (max-width: 900px) {
   header {
     padding: 120px 24px;
@@ -128,6 +290,23 @@ header a:active {
 
   header h2 {
     font-size: 24px;
+  }
+
+  footer {
+    padding: 64px 28px 24px;
+  }
+
+  footer .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-column:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .footer-bottom {
+    margin-top: 44px;
   }
 }
 
@@ -168,6 +347,34 @@ header a:active {
     font-size: 12px;
     padding: 14px 24px;
     margin-top: 26px;
+  }
+  footer {
+    padding: 48px 22px 22px;
+  }
+
+  footer .grid {
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .footer-column:last-child {
+    grid-column: auto;
+  }
+
+  footer h3 {
+    font-size: 19px;
+    margin-bottom: 20px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 36px;
   }
 }
 
