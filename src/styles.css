@@ -385,6 +385,66 @@ main .secondary {
   box-shadow: 0 14px 28px rgba(8, 43, 40, 0.25);
 }
 
+.alicante-gallery {
+  background: #ebd8c7;
+  padding: 60px 20px;
+  color: #082b28;
+  text-align: center;
+}
+
+.instagram-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: start;
+  padding: 20px;
+}
+
+.instagram-card {
+  min-width: 0;
+  background: #c38d50;
+  border: 1px solid rgba(8, 43, 40, 0.12);
+  border-radius: 8px;
+  padding: 8px;
+  box-shadow: 0 6px 18px rgba(8, 43, 40, 0.1);
+  box-sizing: border-box;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.instagram-card:hover {
+  transform: translateY(-5px);
+  background: #d09a5e;
+  border-color: #145b54;
+  box-shadow: 0 14px 28px rgba(8, 43, 40, 0.2);
+}
+
+.instagram-card:focus-within {
+  border-color: #145b54;
+  box-shadow: 0 0 0 3px rgba(20, 91, 84, 0.2);
+}
+
+.instagram-card .instagram-media {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 auto !important;
+  box-sizing: border-box;
+}
+
+.instagram-card iframe {
+  display: block;
+  width: 100% !important;
+  max-width: 100% !important;
+  border: 0;
+  box-sizing: border-box;
+}
+
 footer {
   color: white;
   background-image:
@@ -618,6 +678,18 @@ footer a:focus-visible {
   }
 }
 
+@media (max-width: 1199px) {
+  .alicante-gallery {
+    padding: 50px 18px;
+  }
+
+  .instagram-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    padding: 15px;
+  }
+}
+
 @media (max-width: 1200px) {
   main .grid {
     grid-template-columns: 1fr;
@@ -742,6 +814,25 @@ footer a:focus-visible {
 
   .footer-bottom {
     margin-top: 44px;
+  }
+}
+@media (max-width: 797px) {
+  .alicante-gallery {
+    padding: 40px 15px;
+  }
+
+  .instagram-grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 10px 5px;
+  }
+
+  .instagram-card {
+    padding: 8px;
+  }
+
+  .instagram-card:hover {
+    transform: translateY(-3px);
   }
 }
 
@@ -899,5 +990,24 @@ footer a:focus-visible {
   main p {
     font-size: 14px;
     line-height: 1.7;
+  }
+  .alicante-gallery {
+    padding: 30px 10px;
+  }
+
+  .instagram-grid {
+    gap: 18px;
+    padding: 8px 0;
+  }
+}
+@media (max-width: 1180px) {
+  .alicante-gallery .instagram-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 797px) {
+  .alicante-gallery .instagram-grid {
+    grid-template-columns: 1fr;
   }
 }
