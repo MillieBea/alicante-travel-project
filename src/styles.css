@@ -204,6 +204,21 @@ main .secondary {
 .secondary h3 {
   text-align: center;
 }
+
+.cafe-tagline {
+  color: #082b28;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  margin: 12px 0;
+}
+
+.cafe-mug {
+  color: #c38d50;
+  margin-left: 6px;
+  font-size: 22px;
+}
+
 .secondary .grid-3-columns {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -347,11 +362,17 @@ main .secondary {
   padding: 60px 20px;
   text-align: center;
 }
+.explore-section h2 {
+  margin-bottom: 2px;
+}
+.explore-section h3 {
+  padding: 8px;
+}
 
 .explore-section .explore-subtitle {
   max-width: 600px;
   margin: 0 auto 45px !important;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
   line-height: 1.8;
 }
 
@@ -456,9 +477,15 @@ main .secondary {
   max-width: 800px;
   margin: 0 auto 40px;
 }
+.did-you-know-heading h2 {
+  margin-bottom: 2px;
+}
+.did-you-know-heading h3 {
+  padding: 8px;
+}
 
 .did-you-know-heading p {
-  max-width: 680px;
+  max-width: 640px;
   margin: 0 auto;
   line-height: 1.8;
 }
@@ -647,6 +674,17 @@ main .secondary {
   max-width: 800px;
   margin: 0 auto 45px;
 }
+.sounds-heading h2 {
+  margin-bottom: 2px;
+}
+.sounds-heading h3 {
+  padding: 8px;
+}
+
+.sounds-heading p {
+  max-width: 680px;
+  margin: 0 auto 22px;
+}
 
 .sounds-grid {
   display: grid;
@@ -757,6 +795,219 @@ main .secondary {
   border-radius: 8px;
 }
 
+.bucket-list {
+  background: #c9a16d;
+  color: #082b28;
+  padding: 60px 30px 85px;
+}
+
+.bucket-list-heading {
+  max-width: 800px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.bucket-list-heading h2 {
+  margin-bottom: 2px;
+}
+.bucket-list-heading h3 {
+  padding: 8px;
+}
+
+.bucket-list-heading p {
+  max-width: 680px;
+  margin: 0 auto 22px;
+}
+
+.bucket-list-divider {
+  display: block;
+  width: 65px;
+  height: 5px;
+  margin: 0 auto;
+  background: #a97737;
+  border-radius: 5px;
+}
+
+.bucket-list-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.85fr);
+  gap: 28px;
+  max-width: 1300px;
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.bucket-list-content {
+  display: grid;
+  grid-template-rows: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+  min-width: 0;
+}
+
+.bucket-item {
+  display: grid;
+  grid-template-columns: 48px 42px minmax(0, 1fr) 20px;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  padding: 13px;
+
+  background: #082b28;
+  color: #fffaf3;
+  border: 1px solid rgba(255, 250, 243, 0.18);
+  box-shadow: 0 7px 18px rgba(8, 43, 40, 0.18);
+  text-decoration: none;
+  border-radius: 10px;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.bucket-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background: #c38d50;
+  color: #082b28;
+  border-radius: 50%;
+  font-family: "Poppins", serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.bucket-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #082b28;
+  font-size: 28px;
+}
+.bucket-icon,
+.bucket-arrow {
+  color: #fffaf3;
+}
+
+.bucket-item-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.bucket-item-title {
+  font-family: "Poppins", serif;
+  color: #fffaf3;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 1.5px;
+}
+
+.bucket-item-description {
+  font-size: 12px;
+  line-height: 1.55;
+  color: #ebd8c7;
+}
+
+.bucket-arrow {
+  font-size: 23px;
+  text-align: center;
+  transition: transform 0.25s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .bucket-item:hover {
+    background: #10413c;
+    border-color: #fffaf3;
+  }
+
+  .bucket-item:hover .bucket-arrow {
+    color: #e8b875;
+  }
+}
+
+.bucket-item:focus-visible {
+  outline: 3px solid #082b28;
+  outline-offset: 4px;
+}
+
+.bucket-photo-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 0;
+  padding-bottom: 65px;
+}
+
+.bucket-photo-frame {
+  flex: 1;
+  min-height: 0;
+  padding: 7px;
+  background: #c38d50;
+  border-radius: 4px;
+  box-shadow: 0 12px 25px rgba(8, 43, 40, 0.42);
+}
+
+.bucket-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2px;
+}
+
+.bucket-sticky-note {
+  position: absolute;
+  z-index: 2;
+  right: 12%;
+  bottom: 0;
+  width: 135px;
+  height: 135px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+  background: #fffaf3;
+  color: #082b28;
+  text-align: center;
+  box-shadow: 0 8px 18px rgba(8, 43, 40, 0.9);
+  transform: rotate(9deg);
+}
+
+.bucket-sticky-note p {
+  margin: 0 0 5px;
+  font-family: "Gaegu", cursive;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.bucket-sticky-note span {
+  font-family: "Gaegu", cursive;
+  color: #082b28;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.bucket-leaf-decoration {
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+  bottom: 4px;
+  color: #124039;
+  font-size: 55px;
+  transform: rotate(-30deg);
+}
+
 footer {
   color: white;
   background-image:
@@ -766,28 +1017,30 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-
-  padding: 16px 40px 24px;
+  padding: 8px 40px 12px;
 }
 
 footer .grid {
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-
   display: grid;
-  grid-template-columns: 1fr 1.5fr 1.5fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1.5fr);
   gap: 56px;
+  box-sizing: border-box;
 }
 
-.footer-column {
+footer .footer-column {
   min-width: 0;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 footer h3 {
   font-size: 20px;
   font-weight: 600;
   line-height: 1.5;
-  margin: 0 0 24px;
+  margin: 0 0 16px;
 }
 
 footer h3::after {
@@ -796,7 +1049,7 @@ footer h3::after {
   width: 36px;
   height: 2px;
   background-color: #d9a76c;
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 footer p {
@@ -872,8 +1125,8 @@ footer .footer-credit a {
 
 .footer-bottom {
   max-width: 1200px;
-  margin: 16px auto 0;
-  padding-top: 20px;
+  margin: 10px auto 0;
+  padding-top: 10px;
 
   border-top: 1px solid rgba(255, 255, 255, 0.2);
 
@@ -1058,6 +1311,88 @@ footer a:focus-visible {
   .sound-card {
     padding: 26px 20px;
   }
+  .bucket-list {
+    padding: 55px 25px 70px;
+  }
+
+  .bucket-list-heading {
+    margin-bottom: 35px;
+  }
+
+  .bucket-list-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 35px;
+    max-width: 720px;
+  }
+
+  .bucket-list-content {
+    grid-template-rows: none;
+    grid-auto-rows: auto;
+    gap: 12px;
+  }
+
+  .bucket-item {
+    grid-template-columns: 42px 34px minmax(0, 1fr) 20px;
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .bucket-number {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+  }
+
+  .bucket-icon {
+    font-size: 25px;
+  }
+
+  .bucket-item-title {
+    font-size: 16px;
+  }
+
+  .bucket-item-description {
+    font-size: 12px;
+  }
+
+  .bucket-photo-wrap {
+    width: 100%;
+    max-width: 560px;
+    align-self: center;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+
+  .bucket-photo-frame {
+    flex: none;
+  }
+
+  .bucket-photo {
+    height: auto;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+
+  .bucket-sticky-note {
+    width: 125px;
+    height: 125px;
+    right: 12%;
+    bottom: 0;
+  }
+
+  .bucket-sticky-note p {
+    font-size: 21px;
+  }
+
+  .bucket-sticky-note span {
+    font-size: 22px;
+  }
+
+  .bucket-leaf-decoration {
+    right: 5px;
+    bottom: 2px;
+    font-size: 48px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -1146,12 +1481,12 @@ footer a:focus-visible {
   }
 
   footer {
-    padding: 64px 28px 24px;
+    padding: 35px 28px 20px;
   }
 
   footer .grid {
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 28px;
   }
 
   .footer-column:last-child {
@@ -1159,7 +1494,8 @@ footer a:focus-visible {
   }
 
   .footer-bottom {
-    margin-top: 44px;
+    margin-top: 25px;
+    padding-top: 15px;
   }
 }
 @media (max-width: 797px) {
@@ -1246,32 +1582,40 @@ footer a:focus-visible {
   }
 
   .explore-section h2 {
-    font-size: 30px;
+    font-size: 14px;
   }
 
   .explore-section h3 {
-    font-size: 18px;
+    font-size: 28px;
   }
 
   .explore-section .explore-subtitle {
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.8;
-    padding-bottom: 0;
+    padding: 6px;
   }
 
   .alicante-map {
     width: 100%;
     height: 320px;
-    margin-top: 40px;
+    margin-top: 2px;
     border-width: 3px;
+  }
+  .alicante-gallery p {
+    font-size: 14px;
+    line-height: 1.5;
   }
 
   .did-you-know {
-    padding: 50px 20px;
+    padding: 40px 20px;
   }
 
   .did-you-know-heading {
     margin-bottom: 30px;
+  }
+  .did-you-know-heading p {
+    font-size: 14px;
+    padding: 4px;
   }
 
   .fact-grid {
@@ -1322,7 +1666,7 @@ footer a:focus-visible {
     }
   }
   .sounds-of-alicante {
-    padding: 50px 20px;
+    padding: 40px 20px;
   }
 
   .sounds-heading {
@@ -1330,12 +1674,13 @@ footer a:focus-visible {
   }
 
   .sounds-heading h3 {
-    font-size: 11px;
+    font-size: 28px;
     letter-spacing: 1.5px;
+    padding-top: 8px;
   }
 
   .sounds-heading h2 {
-    font-size: 27px;
+    font-size: 12px;
     line-height: 1.3;
   }
 
@@ -1369,34 +1714,150 @@ footer a:focus-visible {
     font-size: 14px;
     margin-bottom: 20px;
   }
-
-  footer {
-    padding: 48px 22px 22px;
+  .bucket-list {
+    padding: 38px 16px 60px;
   }
 
-  footer .grid {
-    grid-template-columns: 1fr;
-    gap: 34px;
+  .bucket-list-heading {
+    margin-bottom: 28px;
   }
 
-  .footer-column:last-child {
-    grid-column: auto;
+  .bucket-list-heading h2 {
+    font-size: 11px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    margin-bottom: 10px;
   }
 
-  footer h3 {
-    font-size: 19px;
-    margin-bottom: 20px;
+  .bucket-list-heading h3 {
+    font-size: 28px;
+    line-height: 1.25;
+    padding-bottom: 10px;
   }
 
-  footer p {
+  .bucket-list-heading p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .bucket-list-layout {
+    gap: 28px;
+  }
+
+  .bucket-list-content {
+    gap: 10px;
+  }
+
+  /* Compact cards without shrinking the text too much */
+  .bucket-item {
+    grid-template-columns: 34px 26px minmax(0, 1fr) 14px;
+    gap: 8px;
+    padding: 12px 10px;
+    border-radius: 8px;
+  }
+
+  .bucket-number {
+    width: 34px;
+    height: 34px;
     font-size: 14px;
   }
 
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
+  .bucket-icon {
+    font-size: 20px;
+  }
+
+  .bucket-item-text {
+    gap: 5px;
+  }
+
+  .bucket-item-title {
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
+    overflow-wrap: anywhere;
+  }
+
+  .bucket-item-description {
+    font-size: 11px;
+    line-height: 1.55;
+  }
+
+  .bucket-arrow {
+    font-size: 18px;
+  }
+
+  .bucket-photo-wrap {
+    padding-bottom: 52px;
+  }
+
+  .bucket-photo {
+    aspect-ratio: 4 / 3;
+  }
+
+  .bucket-sticky-note {
+    width: 112px;
+    height: 112px;
+    right: 12%;
+    bottom: 0;
+    padding: 9px;
+  }
+
+  .bucket-sticky-note p {
+    font-size: 19px;
+    line-height: 1.1;
+  }
+
+  .bucket-sticky-note span {
+    font-size: 20px;
+  }
+
+  .bucket-leaf-decoration {
+    right: 2px;
+    bottom: 0;
+    font-size: 40px;
+  }
+
+  footer {
+    padding: 20px 14px 15px;
+  }
+
+  footer .grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  footer .footer-column {
+    grid-column: 1 / -1;
+    width: 100%;
+    min-width: 0;
+  }
+
+  footer h3 {
+    margin-bottom: 16px;
+  }
+
+  footer p {
+    overflow-wrap: anywhere;
+    margin-bottom: 14px;
+  }
+
+  footer li a {
+    padding: 9px 0;
+  }
+
+  footer .footer-credit {
+    margin-top: 16px;
+    padding-top: 12px;
+  }
+
+  footer .footer-bottom {
+    margin-top: 20px;
+    padding-top: 12px;
     gap: 12px;
-    margin-top: 36px;
   }
 }
 
@@ -1448,6 +1909,58 @@ footer a:focus-visible {
   .instagram-grid {
     gap: 18px;
     padding: 8px 0;
+  }
+  .bucket-list {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+
+  .bucket-item {
+    grid-template-columns: 30px 22px minmax(0, 1fr) 12px;
+    gap: 6px;
+    padding: 10px 8px;
+  }
+
+  .bucket-number {
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .bucket-icon {
+    font-size: 18px;
+  }
+
+  .bucket-item-title {
+    font-size: 13px;
+  }
+
+  .bucket-item-description {
+    font-size: 10px;
+  }
+
+  .bucket-sticky-note {
+    width: 100px;
+    height: 100px;
+  }
+
+  .bucket-sticky-note p {
+    font-size: 17px;
+  }
+
+  .bucket-sticky-note span {
+    font-size: 18px;
+  }
+
+  .bucket-leaf-decoration {
+    font-size: 34px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bucket-item,
+  .bucket-arrow {
+    transition: none;
   }
 }
 @media (max-width: 1180px) {
