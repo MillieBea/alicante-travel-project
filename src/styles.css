@@ -326,11 +326,161 @@ main p {
 main > .grid {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 80px 30px;
+  padding: 80px 30px 36px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 56px;
   align-items: center;
+}
+
+.alicante-info {
+  padding: 10px 30px 60px;
+  margin-top: 0;
+  background-color: transparent;
+  color: #082b28;
+}
+
+.alicante-info h2 {
+  margin-bottom: 2px;
+}
+.alicante-info h3 {
+  padding: 8px;
+}
+
+.alicante-info .facts-intro {
+  color: #082b28;
+  font-size: 15px;
+  line-height: 1.8;
+  opacity: 0.7;
+  margin: 0 auto 22px;
+}
+
+.alicante-info table {
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  table-layout: fixed;
+  border: 2px solid #082b28;
+  border-radius: 18px;
+  border-spacing: 0;
+  border-collapse: separate;
+  overflow: hidden;
+  background-color: #f5ead8;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  line-height: 1.7;
+  box-shadow:
+    0 14px 30px rgba(8, 43, 40, 0.12),
+    0 4px 12px rgba(195, 141, 80, 0.1),
+    0 0 0 1px rgba(195, 141, 80, 0.25);
+
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+}
+
+.alicante-info table:hover {
+  box-shadow:
+    0 20px 40px rgba(8, 43, 40, 0.18),
+    0 6px 18px rgba(195, 141, 80, 0.16),
+    0 0 0 1px rgba(195, 141, 80, 0.45);
+
+  transform: translateY(-3px);
+}
+
+.alicante-info thead {
+  background: linear-gradient(135deg, #477e78 0%, #28635e 50%, #174b47 100%);
+}
+
+.alicante-info thead th {
+  background: transparent;
+  color: #fffaf3;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 18px 12px;
+  text-align: center;
+  border-bottom: 2px solid #d9a76c;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.12);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.alicante-info thead th i {
+  color: #d9a76c;
+  font-size: 16px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.alicante-info tbody td {
+  width: 25%;
+  padding: 20px 18px;
+  vertical-align: top;
+  color: #333333;
+  border-right: 1px solid #d9a76c;
+}
+
+.alicante-info tbody td:last-child {
+  border-right: none;
+}
+
+.alicante-info tbody ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.alicante-info tbody li {
+  margin-bottom: 10px;
+}
+
+.alicante-info tbody li:last-child {
+  margin-bottom: 0;
+}
+
+.alicante-info tbody td:hover {
+  background-color: #ead8bd;
+}
+
+.alicante-info .botanical-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin: 2px auto 25px;
+  position: relative;
+  color: #082b28;
+}
+
+.alicante-info .botanical-divider i:nth-of-type(2) {
+  color: #c38d50;
+}
+
+.alicante-info .botanical-divider span {
+  color: #c38d50;
+  font-size: 20px;
+  line-height: 1;
+}
+
+.alicante-info .botanical-divider i {
+  font-size: 17px;
+}
+.alicante-info,
+.alicante-info * {
+  box-sizing: border-box;
+}
+
+.alicante-info {
+  width: 100%;
+  max-width: 100%;
+}
+
+.alicante-info .table-responsive {
+  width: 100%;
+  max-width: 100%;
+}
+
+.alicante-info table {
+  width: 100%;
+  table-layout: fixed;
 }
 
 main .secondary {
@@ -1563,6 +1713,83 @@ footer a:focus-visible {
   header h2 {
     font-size: 24px;
   }
+
+  .alicante-info {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .alicante-info .table-responsive {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: visible;
+  }
+
+  .alicante-info .botanical-divider {
+    margin-top: -35px;
+  }
+
+  .alicante-info .facts-intro {
+    font-size: 14px;
+  }
+
+  .alicante-info table {
+    width: 100%;
+    max-width: 100%;
+    table-layout: fixed;
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  .alicante-info thead {
+    display: table-header-group;
+  }
+
+  .alicante-info thead th {
+    padding: 12px 5px;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    overflow-wrap: anywhere;
+  }
+
+  .alicante-info thead th i {
+    display: block;
+    margin: 0 auto 5px;
+    font-size: 14px;
+  }
+
+  .alicante-info tbody {
+    display: table-row-group;
+  }
+
+  .alicante-info tbody tr {
+    display: table-row;
+  }
+
+  .alicante-info tbody td {
+    display: table-cell;
+    width: 25%;
+    min-width: 0;
+    padding: 12px 8px;
+    font-size: 11px;
+    overflow-wrap: anywhere;
+    vertical-align: top;
+  }
+
+  .alicante-info tbody td::before {
+    content: none;
+    display: none;
+  }
+
+  .alicante-info tbody ul {
+    padding-left: 13px;
+    margin: 0;
+  }
+
+  .alicante-info tbody li {
+    margin-bottom: 7px;
+  }
+
   .grid h3 {
     font-size: 24px;
   }
@@ -1729,6 +1956,103 @@ footer a:focus-visible {
   main p {
     font-size: 15px;
     line-height: 1.7;
+  }
+  .alicante-info {
+    padding: 10px 15px 35px;
+  }
+
+  .alicante-info .botanical-divider {
+    margin-top: -35px;
+  }
+
+  .alicante-info h2 {
+    font-size: 14px;
+    line-height: 1.35;
+    letter-spacing: 1.5px;
+  }
+
+  .alicante-info h3 {
+    font-size: 26px;
+    line-height: 1.5;
+  }
+
+  .alicante-info .facts-intro {
+    font-size: 12px;
+    line-height: 1.7;
+    opacity: 0.7;
+  }
+
+  .alicante-info .table-responsive {
+    overflow: visible;
+  }
+
+  .alicante-info table {
+    width: 100%;
+    table-layout: auto;
+    border-radius: 14px;
+  }
+
+  .alicante-info thead {
+    display: none;
+  }
+
+  .alicante-info tbody,
+  .alicante-info tbody tr {
+    display: block;
+    width: 100%;
+  }
+
+  .alicante-info tbody td {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border-right: none;
+    border-bottom: 1px solid #d9a76c;
+    overflow-wrap: anywhere;
+  }
+
+  .alicante-info tbody td:last-child {
+    border-bottom: none;
+  }
+
+  .alicante-info tbody td::before {
+    display: block;
+    margin-bottom: 12px;
+    padding: 12px 10px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #477e78 0%, #28635e 50%, #174b47 100%);
+    color: #fffaf3;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .alicante-info tbody td:nth-child(1)::before {
+    content: "Essential Facts";
+  }
+
+  .alicante-info tbody td:nth-child(2)::before {
+    content: "Local Dishes";
+  }
+
+  .alicante-info tbody td:nth-child(3)::before {
+    content: "Places to Explore";
+  }
+
+  .alicante-info tbody td:nth-child(4)::before {
+    content: "City Highlights";
+  }
+
+  .alicante-info tbody ul {
+    padding-left: 20px;
+    margin: 0;
+  }
+
+  .alicante-info tbody li {
+    margin-bottom: 8px;
   }
 
   .explore-section {
@@ -2058,9 +2382,6 @@ footer a:focus-visible {
   main p {
     font-size: 14px;
     line-height: 1.7;
-  }
-  .alicante-gallery {
-    padding: 30px 10px;
   }
 
   .instagram-grid {
