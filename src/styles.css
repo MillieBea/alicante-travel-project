@@ -205,6 +205,19 @@ main .secondary {
   text-align: center;
 }
 
+.secondary h2 {
+  margin-bottom: 2px;
+}
+.secondary h3 {
+  padding: 8px;
+}
+
+.secondary p {
+  max-width: 680px;
+  margin: 0 auto 22px;
+  opacity: 0.7;
+}
+
 .cafe-tagline {
   color: #082b28;
   font-size: 16px;
@@ -374,6 +387,7 @@ main .secondary {
   margin: 0 auto 45px !important;
   padding-bottom: 2px;
   line-height: 1.8;
+  opacity: 0.7;
 }
 
 .alicante-map {
@@ -488,6 +502,7 @@ main .secondary {
   max-width: 640px;
   margin: 0 auto;
   line-height: 1.8;
+  opacity: 0.7;
 }
 
 .fact-grid {
@@ -684,6 +699,7 @@ main .secondary {
 .sounds-heading p {
   max-width: 680px;
   margin: 0 auto 22px;
+  opacity: 0.7;
 }
 
 .sounds-grid {
@@ -817,6 +833,7 @@ main .secondary {
 .bucket-list-heading p {
   max-width: 680px;
   margin: 0 auto 22px;
+  opacity: 0.7;
 }
 
 .bucket-list-divider {
@@ -1547,13 +1564,13 @@ footer a:focus-visible {
   }
 
   header h2 {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 1.5;
   }
 
   header a {
-    font-size: 12px;
-    padding: 14px 24px;
+    font-size: 10px;
+    padding: 12px 20px;
     margin-top: 26px;
   }
 
@@ -1748,7 +1765,6 @@ footer a:focus-visible {
     gap: 10px;
   }
 
-  /* Compact cards without shrinking the text too much */
   .bucket-item {
     grid-template-columns: 34px 26px minmax(0, 1fr) 14px;
     gap: 8px;
@@ -1871,7 +1887,7 @@ footer a:focus-visible {
   }
 
   header h2 {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   header h3 {
