@@ -1897,8 +1897,8 @@ footer a:focus-visible {
 
 @media (max-width: 600px) {
   header {
-    min-height: 85vh;
-    min-height: 85svh;
+    min-height: 100vh;
+    min-height: 100svh;
     box-sizing: border-box;
     padding: 40px 20px 30px;
 
