@@ -1897,7 +1897,34 @@ footer a:focus-visible {
 
 @media (max-width: 600px) {
   header {
-    padding: 100px 20px;
+    min-height: 85vh;
+    min-height: 85svh;
+    box-sizing: border-box;
+    padding: 40px 20px 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
+
+  header .falling-leaves {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+  }
+
+  header h3,
+  header h1,
+  header h2,
+  header > a {
+    position: relative;
+    z-index: 1;
   }
 
   header h3 {
